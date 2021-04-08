@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Employees from "./Employees.js";
-import Search from "./Search.js";
-import "../styles/EmployeeTable.css";
+import Employees from "../Employees/Employees.js";
+import Search from "../Search/Search.js";
+import "../EmployeeTable.css";
 
 class EmployeeTable extends Component {
   state = {
@@ -50,16 +50,8 @@ class EmployeeTable extends Component {
       <div>
         <div className="jumbotron">
           <h2 className="display-4">Employee Directory</h2>
-          <p>
-            Hey team! At Barbara's request in the last all employee meeting,
-            I've set up an easy way to quickly find information about our
-            officemates.
-          </p>
-          <p>
-            {" "}
-            Search below by name or email to pull up who you are looking for.
-            Any questions or issues, feel free to reach out!
-          </p>
+          <p>Welcome to the Office Directory!</p>
+          <p> Search below by name or email to find a coworker.</p>
           <Search name="search" startSort={this.startSort} label="Search" />
         </div>
 
@@ -67,7 +59,7 @@ class EmployeeTable extends Component {
           <table className="table">
             <thead className="thead">
               <tr>
-                <th>Headshot </th>
+                <th>Picture </th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
@@ -80,11 +72,11 @@ class EmployeeTable extends Component {
                 ? this.state.employees.map((employee) => (
                     <Employees
                       key={employee.id.value}
+                      icon={employee.picture.medium}
                       firstName={employee.name.first}
                       lastName={employee.name.last}
                       phone={employee.phone}
                       email={employee.email}
-                      icon={employee.picture.medium}
                       dob={employee.dob.date}
                     />
                   ))
@@ -92,11 +84,11 @@ class EmployeeTable extends Component {
                   this.state.empSort.map((employee) => (
                     <Employees
                       key={employee.id.value}
+                      icon={employee.picture.medium}
                       firstName={employee.name.first}
                       lastName={employee.name.last}
                       phone={employee.phone}
                       email={employee.email}
-                      icon={employee.picture.medium}
                       dob={employee.dob.date}
                     />
                   ))}

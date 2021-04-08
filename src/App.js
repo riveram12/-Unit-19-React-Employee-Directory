@@ -1,8 +1,8 @@
 import React from "react";
-import Wrapper from "./components/Wrapper";
-import Jumbotron from "./components/EmployeeTable";
+import Wrapper from "./components/Wrapper/Wrapper";
+import Jumbotron from "./components/EmployeeTable/EmployeeTable.css";
 // import employees from "./employees.json";
-import Main from "./components/EmployeeTable";
+import Main from "./components/EmployeeTable/EmployeeTable";
 import "./App.css";
 
 function App() {
