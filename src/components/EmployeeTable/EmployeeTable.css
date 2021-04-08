@@ -1,27 +1,27 @@
 .jumbotron {
-  background: #1c2743;
+  background: #165969;
 }
 
 h2,
 h4 {
-  color: #b46382;
+  color: #3f887e;
   font-family: "Timmana", sans-serif;
 }
 
 p {
-  color: #fd9564;
+  color: #dfdfdf;
   font-family: "Assistant", sans-serif;
   font-size: 1.5rem;
 }
 
 .table {
-  background: #fd9564;
-  color: #b46382;
+  background: #cac8c7;
+  color: #8f8a8c;
   font-family: "Assistant", sans-serif;
 }
 
 .thead {
-  background: #213862;
+  background: #6998f0;
   font-family: "Assistant", sans-serif;
 }
 

@@ -1,16 +1,18 @@
 import React from "react";
-import Wrapper from "./components/Wrapper/Wrapper";
-import Jumbotron from "./components/EmployeeTable/EmployeeTable.css";
-// import employees from "./employees.json";
+// import Wrapper from "./components/Wrapper/Wrapper";
+import Jumbotron from "./components/EmployeeTable/EmployeeTable";
+import employees from "./employees.json";
 import Main from "./components/EmployeeTable/EmployeeTable";
 import "./App.css";
 
 function App() {
   return (
-    <Wrapper>
+    // <Wrapper>
+    <div>
       <Jumbotron />
       <Main />
-    </Wrapper>
+    </div>
+    // </Wrapper>
   );
 }
 

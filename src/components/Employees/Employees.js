@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/Employees.css";
+import "../EmployeeTable/EmployeeTable.css";
+// import "../Employees/EmployeesTable.js";
 
 const Employees = (props) => {
   return (

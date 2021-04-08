@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Employees from "../Employees/Employees.js";
 import Search from "../Search/Search.js";
-import "../EmployeeTable.css";
+import "./EmployeeTable.css";
 
 class EmployeeTable extends Component {
   state = {
@@ -11,11 +11,11 @@ class EmployeeTable extends Component {
     sorted: false,
   };
 
-  // check that the component rendered at least once, and pull in our data
+  // check that the component rendered at least once, and pulls in our data
   // wait for the information to come back
   componentDidMount = () => {
     fetch(
-      `https://randomuser.me/api/?results=25&nat=us&inc=name,email,phone,id,picture,dob`
+      `https://randomuser.me/api/?results=25&nat=us&inc=id,picture,name,phone,email,dob`
     )
       .then((res) => res.json())
       .then((json) => {
